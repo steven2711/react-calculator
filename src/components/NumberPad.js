@@ -7,7 +7,12 @@ const NumberPad = ({ click }) => {
   return (
     <Pad>
       {numbers.map((number, index) => (
-        <Button key={index} info={number} click={click} />
+        <Button
+          key={index}
+          info={number}
+          click={click}
+          background="deepskyblue"
+        />
       ))}
     </Pad>
   );
@@ -16,6 +21,7 @@ const NumberPad = ({ click }) => {
 const Pad = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem;
 `;
 
 export default NumberPad;
