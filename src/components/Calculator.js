@@ -4,7 +4,6 @@ import OperationPad from "./OperationPad";
 import Display from "./Display";
 import styled from "styled-components";
 import { evaluate } from "mathjs";
-import { operations } from "../statics/vaiables";
 
 const Calculator = () => {
   const [display, setDisplay] = useState(0);
